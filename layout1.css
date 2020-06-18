@@ -42,7 +42,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
 .row2{color:#979797; background-color:#FFFFFF;}
-.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row2 a{color:#FF9900;}
 .row3, .row3 a{color:#919191; background-color:#232323;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
@@ -90,7 +90,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
 #header nav li a{color:#C0BAB6; background-color:#232323;}
-#header nav li a:hover{color:#FF9900; background-color:#232323;}
+#header nav li a:hover{color:#FF9900;}
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
