@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Templates color change</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -48,7 +48,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Template 1-->
-<p><a href="#ex1" rel="modal:open" class="nr1" style="display: none;">Open Modal</a></p>
+<p><a href="#ex1" rel="modal:open" class="nr1" style="display: none;">Change page colors</a></p>
+<p><a href="#ex4" rel="modal:open" class="back nr1" style="display: none;">Back to template choice</a></p>
 <div class="wrapper row1 nr1" style="display: none;">
   <header id="header" class="clear">
     <div id="hgroup">
@@ -121,7 +122,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Template 2-->
-<p><a href="#ex2" rel="modal:open" class="nr2" style="display: none;">Open Modal</a></p>
+<p><a href="#ex2" rel="modal:open" class="nr2" style="display: none;">Change page colors</a></p>
+<p><a href="#ex4" rel="modal:open" class="back nr2" style="display: none;">Back to template choice</a></p>
 <div class="wrapper row1 nr2" style="display: none;">
   <header id="header" class="clear">
     <div id="hgroup">
@@ -244,7 +246,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <!-- Template 3-->
-<p><a href="#ex3" rel="modal:open" class="nr3" style="display: none;">Open Modal</a></p>
+<p><a href="#ex3" rel="modal:open" class="nr3" style="display: none;">Change page colors</a></p>
+<p><a href="#ex4" rel="modal:open" class="back nr3" style="display: none;">Back to template choice</a></p>
 <div class="wrapper row1 nr3" style="display: none;">
   <header id="header" class="clear">
     <h2>Website Template</h2>
@@ -290,7 +293,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <!-- Template 4-->
-<p><a href="#ex4" rel="modal:open" class="nr4" style="display: none;">Open Modal</a></p>
+<p><a href="#ex4" rel="modal:open" class="nr4" style="display: none;">Change page colors</a></p>
+<p><a href="#ex4" rel="modal:open" class="back nr4" style="display: none;">Back to template choice</a></p>
 <div class="wrapper row1 nr4" style="display: none;">
   <header id="header" class="clear">
     <h2>Website Template</h2>
@@ -486,7 +490,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       $(this).css("color",$("#ex1_color_text").val());
     });
   });
-
   $("#ex2_color_link").on("change",function(){
     $(".row2 a").css("color",$("#ex2_color_link").val());
     $("#container #left_column nav a").css("color",$("#ex2_color_text").val());
@@ -528,7 +531,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   $("#ex3_color_box2").on("change",function(){
     $("#container #col1 .row .box2").css("background-color",$("#ex3_color_box2").val());
   });
-  });
 
   $("#ex4_color_col1").on("change",function(){
     $("#container #col11").css("background-color",$("#ex4_color_col1").val());
@@ -537,9 +539,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     $("#container #col21").css("background-color",$("#ex4_color_col2").val());
   });
   $("#ex4_color_col3").on("change",function(){
+
     $("#container #col31").css("background-color",$("#ex4_color_col3").val());
   });
-  
+
+  $('.back').click(function() {
+    location.reload();
+});
+ 
+});
 </script>
 </body>
 </html>
